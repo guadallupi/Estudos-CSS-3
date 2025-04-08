@@ -1,0 +1,28 @@
+<body>
+  <h1>Flex Direction</h1>
+  <div class="container"> //Class da <div> : .container
+    <p class="item">Item 1</p>
+    <p class="item">Item 2</p>
+    <p class="item">Item 3</p>
+    <p class="item">Item 4</p>
+  </div>
+</body>
+</html>
+
+//Style CSS:
+
+.container{
+  display: flex;
+  border: 2px solid black;
+  flex-direction: row-reverse; //HORIZONTAL DECRESCENTE: 4, 3, 2, 1
+}
+
+// TIPOS DE FLEX-DIRECTION:
+
+/ / *row: HORIZONTAL CRESCENTE
+
+// row-reverse: HORIZONTAL DECRESCENTE
+
+// column: VERTICAL CRESCENTE (COLUNA)
+
+// column-reverse: VERTICAL DECRESCENTE (COLUNA)
