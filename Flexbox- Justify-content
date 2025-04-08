@@ -1,0 +1,46 @@
+<body>
+  <h1>Justify Content</h1>
+  <div class="container"> //class da div: "container"
+    <p class="item">Item 1</p>
+    <p class="item">Item 2</p>
+    <p class="item">Item 3</p>
+    <p class="item">Item 4</p>
+  </div>
+</body>
+
+// STYLE CSS
+
+.container{
+  display: flex;
+  height: 500px;
+  border: 2px solid black;
+  flex-direction: column; /*row, row-reverse, column, column-reverse*/
+  justify-content: space-around; /* flex-start, center, flex-end, space-around, space-evenly, space-between*/
+}
+
+//JUSTIFY-CONTENT: posicionar onde os itens devem estar no Eixo Principal
+
+.container{
+  display: flex;
+  height: 500px; // NECESSÁRIO QUANDO FORMATO DE COLUNA (flex-direction: column);
+  border: 2px solid black;
+  flex-direction: column; /*row (VALOR DE DEFAUT), row-reverse, column, column-reverse*/
+  justify-content: space-around; /* flex-start (VALOR DE DEFAUT), center, flex-end, space-around, space-evenly, space-between*/
+}
+
+
+
+//1. FLEX-START: mantém a ordem normal, direcionados à ESQUERDA (NO COMEÇO) -- VALOR DEFAUT
+
+//2. CENTER: ITENS FICAM AO CENTRO COM ESPAÇO ENTRE ELES E AS BORDAS
+
+//3. FLEX-END: mantém a ordem normal, direcionados à DIREITA (NO FINAL)
+
+//4. SPACE-AROUND: COMEÇA COM ESPAÇAMENTO E DISTRIBUI OS ELEMENTOS AO LONGO DA TELA COM UMA MARGEM IGUAL (SE AJUSTA À TELA)
+
+//5. SPACE-EVENLY: COMEÇA COM ESPAÇAMENTO DO MESMO TAMANHO E DISTRIBUI OS ELEMENTOS AO LONGO DA TELA COM UM ESPAÇAMENTO SÓ SEPARANDO OS ITENS
+
+//6. SPACE-BETWEEN: NÃO TEM ESPAÇAMENTO DOS LADOS, DISTRIBUI OS ELEMENTOS AO LONGO DA TELA COM UM ESPAÇAMENTO SOMENTE ENTRE OS ITENS
+
+//SE FOR flex-direction: column: DETERMINAR UM HEIGHT (ALTURA) 
+
