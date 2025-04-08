@@ -1,0 +1,43 @@
+<body>
+  <h1>Align Items</h1>
+  <div class="container">
+    <p class="item">Item 1</p>
+    <p class="item">Item 2</p>
+    <p class="item i3">Item 3</p>
+    <p class="item">Item 4</p>
+  </div>
+</body>
+
+//STYLE CSS:
+
+.container{
+  display: flex;
+  height: 200px;
+  border: 2px solid black;
+  flex-direction: row; /*row, row-reverse, column, column-reverse*/
+  justify-content: flex-start; /* flex-start, center, flex-end, space-around, space-evenly, space-between*/
+  align-items: baseline; /* stretch, flex-start, flex-end, center e baseline*/
+}
+
+.item{
+  background-color: tomato;
+  margin: 10px;
+  padding: 10px 0;
+}
+
+.i3{
+  font-size: 40px;
+}
+
+//ALIGN-ITEMS: POSICIONAMENTO DOS ITENS 
+
+//1. STRETCH: VALOR PAR DEFAUT -- ESTICA OS ITENS PARA FICAR COM A MESMA ALTURA DO CONTAINER
+
+//2. FLEX-START: COMEÇO DA LINHA EM CIMA
+
+//3. FLEX-END: FINAL DA LINHA EMBAIXO
+
+//4. CENTER: ITENS POSICIONADOS AO CENTRO
+
+//5. BASELINE: ITENS ALINHADOS DENTRO DO CONTAINER
+
