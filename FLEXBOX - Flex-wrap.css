@@ -1,0 +1,43 @@
+<body>
+  <h1>Flex Wrap</h1>
+  <div class="container">
+    <p class="item">Item 1</p>
+    <p class="item">Item 2</p>
+    <p class="item">Item 3</p>
+    <p class="item">Item 4</p>
+    <p class="item">Item 5</p>
+    <p class="item">Item 6</p>
+    <p class="item">Item 7</p>
+    <p class="item">Item 8</p>
+    <p class="item">Item 9</p>
+    <p class="item">Item 10</p>
+    <p class="item">Item 11</p>
+    <p class="item">Item 12</p>
+  </div>
+</body>
+
+// STYLE CSS:
+
+.container{
+  display: flex;
+  height: 200px;
+  border: 2px solid black;
+  flex-direction: row; /*row, row-reverse, column, column-reverse*/
+  justify-content: flex-start; /* flex-start, center, flex-end, space-around, space-evenly, space-between*/
+  align-items: flex-start; /* stretch, flex-start, flex-end, center e baseline*/
+  flex-wrap: wrap; /* nowrap, wrap, wrap-reverse*/ //ORGANIZA OSS ITENS QUANDO HÁ ITENS EM EXCESSO PARA CABER EM UMA SÓ LINHA
+}
+
+.item{
+  background-color: tomato;
+  margin: 10px;
+  padding: 10px 0;
+}
+
+//FLEX-WRAP: INÚMEROS ITENS NA <div> AO PONTO DE NÃO CABEREM NA MESMA LINHA (poderia usar OVERFLOW: AUTO)
+
+//1. WRAP: OS ITENS QUEBRAM DE LINHA (O EXCESSO DE ITENS OCUPA UMA SEGUNDA LINHA) PARA EVITAR QUE ELES "VAZEM"
+
+//2. NOWRAP: VALOR DEFAULT (NÃO QUEBRA A LINHA)
+
+//3. WRAP-REVERSE: INVERTE A ORDEM DAS LINHAS DOS ITENS NA QUEBRA DE LINHA 
