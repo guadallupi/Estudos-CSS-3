@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aula 11.6</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Align self</h1>
+  <div class="container">
+    <p class="item">Item 1</p>
+    <p class="item i2">Item 2</p> //CRIOU UMA CLASSE SUB-DIV: i2 --> as características vão se sobrepor às características da DIV ("Pai")
+    <p class="item i3">Item 3</p> // CRIOU UMA CLASSE SUB-DIV: i3
+    <p class="item">Item 4</p>
+    <p class="item">Item 5</p>
+  </div>
+</body>
+</html>
+
+// STYLE CSS:
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.container{
+  display: flex;
+  height: 400px;
+  border: 2px solid black;
+  flex-direction: row; /*row, row-reverse, column, column-reverse*/
+  justify-content: flex-start; /* flex-start, center, flex-end, space-around, space-evenly, space-between*/
+  align-items: center; /* stretch, flex-start, flex-end, center e baseline*/
+  /*flex-wrap: wrap; /* nowrap, wrap, wrap-reverse*/
+  /*align-content: center; /* stretch, flex-start, flex-end, */
+}
+
+.item{
+  background-color: tomato;
+  margin: 10px;
+  padding: 10px 0;
+}
+
+.i3{
+  align-self: flex-end; //O ITEM 3 VAI FICAR SOZINHO EMBAIXO  /*OUTROS TIPOS DE ALINHAMENTO: stretch, flex-start, flex-end, center e baseline*/
+}
+
+.i2{
+  align-self: stretch; // O ITEM 2 VAI FICAR SOZINHO ESTICADO /*OUTROS TIPOS DE ALINHAMENTO: stretch, flex-start, flex-end, center e baseline*/
+}
+
