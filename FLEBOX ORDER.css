@@ -1,0 +1,26 @@
+//FLEBOX ORDER: serve para colocar os itens em ORDEM
+
+// O VALOR DA ORDEM PAR DEFAULT COMEÇA COM: O
+
+<body>
+  <h1>Order</h1>
+  <div class="container">
+    <p class="item">1</p>
+    <p class="item i2">2</p> //CLASSE-FILHA: i2
+    <p class="item i3">3</p> //CLASSE-FILHA: i3
+    <p class="item">4</p>
+    <p class="item">5</p>
+  </div>
+</body>
+
+//STYLE CSS:
+
+.i3{
+  /*align-self: flex-end;  /* stretch, flex-start, flex-end, center e baseline*/
+  order: -1; // A ORDEM VAI FICAR: ITEM 3, ITEM 1, ITEM, 2, ITEM 4, ITEM 5 (TODOS OS ITENS TEM ORDEM = 0, ENTÃO O ITEM 3 ESTÁ NA FRENTE PORQUE TEM ORDEM = -1)
+}
+
+.i2{
+  /*align-self: stretch;  /* stretch, flex-start, flex-end, center e baseline*/
+  order: 1; // A ORDEM VAI FICAR: ITEM 3, ITEM 1, ITEM 4, ITEM 5, ITEM 2 (O ITEM 3 TEM ORDEM = -1 (FICA NA FRENTE), OS ITENS 4 E 5 TÊM ORDEM = 0 (NÃO SE MEXEM), O ITEM 2 TEM ORDEM = 1 (FICA POR ÚLTIMO PORQUE É O MAIOR VALOR DAS ORDENS)
+}
