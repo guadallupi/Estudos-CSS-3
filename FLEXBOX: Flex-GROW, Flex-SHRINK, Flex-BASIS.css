@@ -1,0 +1,29 @@
+<body>
+  <h1>Flex grow, flex basis e flex shrink</h1>
+  <div class="container">
+    <p class="item">1</p>
+    <p class="item i2">2</p> //CLASSE-FILHA: i2
+    <p class="item i3">3</p> //CLASSE-FILHA: i3
+    <p class="item">4</p>
+    <p class="item">5</p>
+  </div>
+</body>
+
+//STYLE CSS:
+
+//1. FLEX-GROW: AUMENTAR O TAMANHO DE ELEMENTOS ESPECÍFICOS EM COMPRIMENTO (SE flex-direction = row) OU EM ALTURA (SE flex-direction = column)
+.i3{
+  /*align-self: flex-end;  /* stretch, flex-start, flex-end, center e baseline*/
+  /*order: -1;*/
+  flex-grow: 1; //OCUPA O ESPAÇO COMPLETO DE UMA <div> , MAS PERMITE DIMINUIR DE TAMANHO OU AUMENTAR QUANDO A TELA É MANIPULADA. VALOR PAR DEFAULT = 0
+}
+
+//2. FLEX-SHRINK (DIMINUI O VALOR DO ELEMENTO) + FLEX-BASIS (TAMANHO DO ELEMENTO EM LARGURA OU ALTURA): 
+
+.i2{
+  /*align-self: stretch;  /* stretch, flex-start, flex-end, center e baseline*/
+  /*order: 1;*/
+  /* flex-grow: 4; */
+  flex-basis: 200px; //TAMAMHO DA LARGURA OU DA ALTURA 
+  flex-shrink: 1; // PERMITE QUE O ELEMENTO MUDE DE TAMANHO AO MANIPULAR A TELA. MAS SE VALOR PADRÃO = 0 (NÃO PERMITE QUE O ELEMENTO MUDE DE TAMANHO NA MANIPULAÇÃO DA TELA)
+}
