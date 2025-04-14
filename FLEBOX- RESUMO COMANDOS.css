@@ -1,0 +1,15 @@
+//1. JUSTIFY-CONTENT: flex-start (default)/ flex-end / center / space-between / space-around / space-evenly
+
+//2. ALIGN-ITEMS: flex-start / flex-end / center / baseline / stretch (par default)
+
+//3. FLEX-DIRECTION: row / row-reverse / column / column-reverse
+
+//4. ORDER: -1, 0, 1, ...
+
+//5. ALIGN-SELF: flex-start / flex-end / center / baseline / stretch
+
+//6. FLEX-WRAP: nowrap (par default) / wrap / wrap-reverse
+
+//7. ATALHO FLEX-FLOW: FLEX-DIRECTION + FLEX-WRAP
+
+//8. ALIGN-CONTENT: flex-start / flex-end / center / space-between / space-around / space-evenly / stretch (par default)
