@@ -1,0 +1,30 @@
+<h1>Atalhos flex-flow e flex</h1>
+  <div class="container">
+    <p class="item">1</p>
+    <p class="item i2">2</p>
+    <p class="item i3">3</p>
+    <p class="item">4</p>
+    <p class="item">5</p>
+  </div>
+
+//STYLE CSS:
+
+//1. ATALHO FLEX-FLOW: FLEX-DIRECTION + FLEX-WRAP
+.container{
+/*flex-direction: row; /*row, row-reverse, column, column-reverse */
+  /*flex-wrap: wrap; /*nowrap, wrap, wrap-reverse */
+  flex-flow: row wrap; /* flex-direction e flex-wrap (atalho)*/
+}
+
+//2. ATALHO FLEX: FLEX-GROW + FLEX-SHRINK + FLEX-BASIS
+
+.i3{
+  /* flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 500px; */
+  flex: 1 0 500px;
+}
+
+.i2{
+  flex: 2; // VALOR SOMENTE DO FLEX-GROW PORQUE ELE É O PRIMEIRO DA LISTA 
+}
